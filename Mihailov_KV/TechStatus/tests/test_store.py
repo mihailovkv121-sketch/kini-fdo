@@ -1,4 +1,3 @@
-"""Повторно используемые unit-тесты логики «ТехСтатус» (для ЛР №3)."""
 import tempfile
 import unittest
 from pathlib import Path
