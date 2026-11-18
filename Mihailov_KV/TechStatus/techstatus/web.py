@@ -1,4 +1,3 @@
-"""Локальный веб-интерфейс проекта «ТехСтатус», без внешних зависимостей."""
 from __future__ import annotations
 
 from html import escape
@@ -24,7 +23,7 @@ def frame(title: str, body: str, notice: str = '', error: bool = False) -> str:
 <body><header class="top"><div class="wrap header"><a href="/" class="logo"><span class="logo-icon">Т</span>ТехСтатус</a>
 <nav><a href="/">Оборудование</a><a href="/history">Журнал операций</a></nav><span class="pill">Локальный режим</span></div></header>
 <main class="wrap">{banner}{body}</main>
-<footer class="wrap foot">ТехСтатус · Учебный прототип · Данные хранятся на этом компьютере</footer></body></html>'''
+<footer class="wrap foot">ТехСтатус · Данные хранятся на этом компьютере</footer></body></html>'''
 
 
 def dashboard(store: EquipmentStore, query: dict) -> str:
